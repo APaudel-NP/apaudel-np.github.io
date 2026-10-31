@@ -46,61 +46,114 @@
           <a href="writing.html" class="hover:text-black dark:hover:text-white transition-colors">Writing</a>
           <a href="contact.html" class="text-black dark:text-white font-semibold transition-colors">Contact</a>
         </nav>
+
+        <!-- Theme Toggle Button -->
+        <button onclick="document.documentElement.classList.toggle('dark')" aria-label="Toggle theme" class="p-2 rounded-lg border border-[#d0d7de] dark:border-[#30363d] bg-white dark:bg-[#161b22] text-slate-700 dark:text-slate-300 hover:border-slate-400 dark:hover:border-slate-500 transition-colors">
+          <!-- Sun icon for dark mode -->
+          <svg class="w-4 h-4 hidden dark:block" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+          <!-- Moon icon for light mode -->
+          <svg class="w-4 h-4 block dark:hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path></svg>
+        </button>
       </div>
     </div>
   </header>
 
   <!-- Main Content -->
-  <main class="max-w-3xl mx-auto px-6 py-12 space-y-10">
+  <main class="max-w-3xl mx-auto px-6 py-12 space-y-12">
     
     <!-- Title Section -->
     <section class="space-y-3">
       <h1 class="text-3xl font-bold tracking-tight">Get in Touch</h1>
       <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
-        Whether you want to discuss IT infrastructure, technical writing, academic research, or collaboration—feel free to reach out directly.
+        Whether you want to discuss IT infrastructure, technical writing, academic research, or collaboration; feel free to reach out directly.
       </p>
     </section>
 
-    <!-- Direct Contact Cards -->
-    <section class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
+    <!-- Direct Contact & Location Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
       
-      <!-- Primary Email -->
-      <a href="mailto:aadipaudel@outlook.com" class="p-6 rounded-xl border border-[#d0d7de] dark:border-[#30363d] bg-white dark:bg-[#161b22] hover:border-blue-500 transition-colors block group">
-        <div class="text-slate-500 dark:text-slate-400 font-mono mb-2">Direct Email</div>
-        <div class="text-sm font-bold group-hover:text-blue-500 transition-colors">aadipaudel@outlook.com</div>
-        <p class="text-slate-500 mt-2 text-[11px]">Best way to contact me for formal inquiries.</p>
-      </a>
-
-      <!-- Location / Status -->
-      <div class="p-6 rounded-xl border border-[#d0d7de] dark:border-[#30363d] bg-white dark:bg-[#161b22]">
-        <div class="text-slate-500 dark:text-slate-400 font-mono mb-2">Location & Base</div>
-        <div class="text-sm font-bold">Kathmandu, Nepal</div>
-        <p class="text-slate-500 mt-2 text-[11px]">Timezone: NPT (UTC+5:45)</p>
+      <!-- Direct Email Card -->
+      <div class="p-5 rounded-xl border border-[#d0d7de] dark:border-[#30363d] bg-white dark:bg-[#161b22] space-y-2">
+        <div class="text-xs font-mono text-slate-500">Direct Email</div>
+        <div>
+          <a href="mailto:aadipaudel@outlook.com" class="text-sm font-bold hover:text-blue-500 transition-colors">aadipaudel@outlook.com</a>
+        </div>
+        <p class="text-xs text-slate-600 dark:text-slate-400 pt-1">
+          Best way to contact me for formal inquiries.
+        </p>
       </div>
 
+      <!-- Location Card -->
+      <div class="p-5 rounded-xl border border-[#d0d7de] dark:border-[#30363d] bg-white dark:bg-[#161b22] space-y-2">
+        <div class="text-xs font-mono text-slate-500">Location & Base</div>
+        <div class="text-sm font-bold">Kathmandu, Nepal</div>
+        <p class="text-xs text-slate-600 dark:text-slate-400 pt-1">
+          Timezone: NPT (UTC+5:45)
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Profiles & Code Section -->
+    <section class="space-y-6">
+      <div class="space-y-1">
+        <h2 class="text-xl font-bold tracking-tight">Profiles & Code</h2>
+        <p class="text-slate-600 dark:text-slate-400 text-xs">External development channels and professional networks.</p>
+      </div>
+
+      <div class="p-5 rounded-xl border border-[#d0d7de] dark:border-[#30363d] bg-white dark:bg-[#161b22] divide-y divide-[#d0d7de] dark:divide-[#30363d] text-xs">
+        
+        <!-- GitHub -->
+        <div class="py-3 first:pt-0 last:pb-0 flex items-center justify-between">
+          <div class="space-y-0.5">
+            <div class="font-bold text-sm">GitHub</div>
+            <div class="text-slate-500">Repository hosting & personal projects</div>
+          </div>
+          <a href="https://github.com/apaudel-np" target="_blank" rel="noopener noreferrer" class="font-mono text-blue-500 hover:underline">github.com/apaudel-np &rarr;</a>
+        </div>
+
+        <!-- LinkedIn -->
+        <div class="py-3 first:pt-0 last:pb-0 flex items-center justify-between">
+          <div class="space-y-0.5">
+            <div class="font-bold text-sm">LinkedIn</div>
+            <div class="text-slate-500">Professional updates & technical articles</div>
+          </div>
+          <a href="https://www.linkedin.com/in/aaditya-paudel-532959325" target="_blank" rel="noopener noreferrer" class="font-mono text-blue-500 hover:underline">LinkedIn Profile &rarr;</a>
+        </div>
+
+        <!-- Instagram -->
+        <div class="py-3 first:pt-0 last:pb-0 flex items-center justify-between">
+          <div class="space-y-0.5">
+            <div class="font-bold text-sm">Instagram</div>
+            <div class="text-slate-500">Personal updates & visual journal</div>
+          </div>
+          <a href="https://www.instagram.com/aadityapaudel6401/" target="_blank" rel="noopener noreferrer" class="font-mono text-blue-500 hover:underline">@aadityapaudel6401 &rarr;</a>
+        </div>
+
+      </div>
     </section>
 
-    <!-- Social & Professional Links -->
-    <section class="space-y-4">
-      <h2 class="text-lg font-bold tracking-tight">Profiles & Code</h2>
-      <div class="p-6 rounded-xl border border-[#d0d7de] dark:border-[#30363d] bg-white dark:bg-[#161b22] space-y-4 text-xs">
-        
-        <div class="flex items-center justify-between pb-3 border-b border-slate-200 dark:border-slate-800">
-          <div>
-            <span class="font-bold">GitHub</span>
-            <span class="text-slate-500 block text-[11px]">Repository hosting & personal projects</span>
-          </div>
-          <a href="https://github.com/apaudel-np" target="_blank" class="text-blue-500 hover:underline font-mono">github.com/apaudel-np &rarr;</a>
+    <!-- vCard QR Code Section -->
+    <section class="space-y-6">
+      <div class="space-y-1">
+        <h2 class="text-xl font-bold tracking-tight">Contact Card</h2>
+        <p class="text-slate-600 dark:text-slate-400 text-xs">Scan to instantly save contact details to your device.</p>
+      </div>
+
+      <div class="p-6 rounded-xl border border-[#d0d7de] dark:border-[#30363d] bg-white dark:bg-[#161b22] flex flex-col sm:flex-row items-center justify-between gap-6">
+        <div class="space-y-2 text-center sm:text-left">
+          <div class="font-bold text-sm">vCard Integration</div>
+          <p class="text-xs text-slate-600 dark:text-slate-400 max-w-sm leading-relaxed">
+            Point your smartphone camera at the QR code to load my digital business card and import contact details directly.
+          </p>
         </div>
 
-        <div class="flex items-center justify-between">
-          <div>
-            <span class="font-bold">LinkedIn</span>
-            <span class="text-slate-500 block text-[11px]">Professional updates & technical articles</span>
+        <div class="flex flex-col items-center justify-center p-4 border border-slate-200 dark:border-slate-800 rounded-lg bg-slate-50 dark:bg-[#0d1117] space-y-2">
+          <div class="bg-white p-3 rounded-md shadow-sm">
+            <img src="qr-code with vcfembed.png" alt="vCard QR Code" width="140" height="140" class="block">
           </div>
-          <a href="https://linkedin.com" target="_blank" class="text-blue-500 hover:underline font-mono">LinkedIn Profile &rarr;</a>
+          <span class="text-[11px] font-mono text-slate-500 dark:text-slate-400">Scan to connect</span>
         </div>
-
       </div>
     </section>
 
@@ -108,7 +161,7 @@
 
   <!-- Footer -->
   <footer class="border-t border-[#d0d7de] dark:border-[#30363d] py-8 text-center text-xs text-slate-500">
-    <p>&copy; 2026 Aaditya Paudel. Built with HTML & Tailwind CSS.</p>
+    <p>&copy; 2026 Aaditya Paudel.</p>
   </footer>
 
 </body>
