@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aaditya Paudel</title>
+  
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            mono: ['"JetBrains Mono"', 'monospace'],
+            sans: ['Inter', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    code, pre, .mono { font-family: 'JetBrains Mono', monospace; }
+  </style>
+</head>
+<body class="bg-[#fafafa] dark:bg-[#0d1117] text-[#1f2328] dark:text-[#e6edf3] antialiased transition-colors duration-200">
+
+  <!-- Header / Navigation -->
+  <header class="sticky top-0 z-50 backdrop-blur-md bg-[#fafafa]/90 dark:bg-[#0d1117]/90 border-b border-[#d0d7de] dark:border-[#30363d]">
+    <div class="max-w-3xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="index.html" class="text-sm font-semibold tracking-tight hover:opacity-80 transition-opacity">
+        Aaditya Paudel<span class="text-slate-500 dark:text-slate-400">.</span>
+      </a>
+
+      <div class="flex items-center space-x-6 text-sm">
+        <nav class="hidden sm:flex space-x-6 text-slate-700 dark:text-slate-400 font-medium text-xs">
+          <a href="index.html" class="text-black dark:text-white font-semibold transition-colors">Home</a>
+          <a href="about.html" class="hover:text-black dark:hover:text-white transition-colors">About</a>
+          <a href="writing.html" class="hover:text-black dark:hover:text-white transition-colors">Writing</a>
+          <a href="contact.html" class="hover:text-black dark:hover:text-white transition-colors">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="max-w-3xl mx-auto px-6 py-12 space-y-16">
+    
+    <!-- Hero Section -->
+    <section class="space-y-6">
+      <div class="space-y-2">
+        <h1 class="text-3xl font-bold tracking-tight">Aaditya Paudel</h1>
+        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed max-w-xl">
+          Grade 12 Management student at Kathmandu Model Secondary School (KMSS) and Class Representative. Focused on digital governance, IT infrastructure analysis, and first-principles education.
+        </p>
+      </div>
+
+      <!-- Focus Badges (Item 11: C Programming -> Programming) -->
+      <div class="flex flex-wrap gap-2 text-xs font-mono">
+        <span class="px-3 py-1 rounded-md border border-[#d0d7de] dark:border-[#30363d] bg-white dark:bg-[#161b22]">IT Infrastructure</span>
+        <span class="px-3 py-1 rounded-md border border-[#d0d7de] dark:border-[#30363d] bg-white dark:bg-[#161b22]">Digital Governance</span>
+        <span class="px-3 py-1 rounded-md border border-[#d0d7de] dark:border-[#30363d] bg-white dark:bg-[#161b22]">Systems Analysis</span>
+        <span class="px-3 py-1 rounded-md border border-[#d0d7de] dark:border-[#30363d] bg-white dark:bg-[#161b22]">Programming</span>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="flex items-center space-x-3 pt-2">
+        <a href="writing.html" class="px-4 py-2 rounded-xl text-xs font-semibold bg-white dark:bg-[#161b22] border border-[#d0d7de] dark:border-[#30363d] hover:border-slate-400 dark:hover:border-slate-500 transition-colors">
+          Explore Writing
+        </a>
+        <a href="contact.html" class="px-4 py-2 rounded-xl text-xs font-semibold bg-white dark:bg-[#161b22] border border-[#d0d7de] dark:border-[#30363d] hover:border-slate-400 dark:hover:border-slate-500 transition-colors">
+          Get in Touch
+        </a>
+      </div>
+    </section>
+
+    <!-- Writing & Publications Section -->
+    <section class="space-y-6">
+      <div class="space-y-1">
+        <h2 class="text-xl font-bold tracking-tight">Writing & Publications</h2>
+        <p class="text-slate-600 dark:text-slate-400 text-xs">Technical breakdowns, policy insights, and infrastructure analysis.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        
+        <!-- Published Article -->
+        <article class="p-5 rounded-xl border border-[#d0d7de] dark:border-[#30363d] bg-white dark:bg-[#161b22] flex flex-col justify-between space-y-4">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between text-xs font-mono text-slate-500">
+              <span class="px-2 py-0.5 rounded-md bg-slate-100 dark:bg-[#21262d] text-emerald-600 dark:text-emerald-400 font-semibold">published</span>
+              <span>28 Oct 2026</span>
+            </div>
+            <div>
+              <h3 class="text-sm font-bold hover:text-blue-500 transition-colors">
+                <a href="php-rce-analysis.html">PHP Remote Code Execution (RCE) Analysis</a>
+              </h3>
+              <p class="text-xs text-slate-600 dark:text-slate-400 mt-1.5 leading-relaxed">
+                A technical breakdown analyzing recent PHP RCE security vulnerabilities, patch mechanics, and administrative mitigations.
+              </p>
+            </div>
+          </div>
+          <div class="pt-2 flex items-center justify-between text-xs font-medium">
+            <span class="text-slate-500 font-mono text-[11px]">Tags: #Cybersecurity #PHP #RCE</span>
+            <div class="flex items-center space-x-3">
+              <a href="php-rce-analysis.html" class="text-blue-500 hover:underline">Read Article &rarr;</a>
+              <a href="https://lnkd.in/p/gBR2YX3J" target="_blank" rel="noopener noreferrer" class="text-slate-500 hover:text-blue-400 transition-colors">LinkedIn Post &nearr;</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Upcoming Article -->
+        <article class="p-5 rounded-xl border border-[#d0d7de] dark:border-[#30363d] bg-white dark:bg-[#161b22] flex flex-col justify-between space-y-4">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between text-xs font-mono text-slate-500">
+              <span class="px-2 py-0.5 rounded-md bg-slate-100 dark:bg-[#21262d] text-amber-500 font-semibold">upcoming</span>
+              <span>Scheduled: 11 Nov 2026</span>
+            </div>
+            <div>
+              <h3 class="text-sm font-bold">The Lifecycle of a Vulnerability</h3>
+              <p class="text-xs text-slate-600 dark:text-slate-400 mt-1.5 leading-relaxed">
+                A 3-stage governance framework detailing discovery, disclosure ethics, and systemic mitigation in IT infrastructure.
+              </p>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Contact & Identity Section (vCard / QR Code) -->
+    <section class="space-y-6">
+      <div class="space-y-1">
+        <h2 class="text-xl font-bold tracking-tight">Contact & Identity</h2>
+        <p class="text-slate-600 dark:text-slate-400 text-xs">Direct professional communication channels.</p>
+      </div>
+
+      <div class="p-6 rounded-xl border border-[#d0d7de] dark:border-[#30363d] bg-white dark:bg-[#161b22] grid grid-cols-1 sm:grid-cols-2 gap-6 items-center">
+        
+        <div class="space-y-3 text-xs">
+          <div>
+            <div class="text-slate-500 font-mono mb-1">Email</div>
+            <a href="mailto:aadipaudel@outlook.com" class="font-bold hover:text-blue-500 transition-colors">aadipaudel@outlook.com</a>
+          </div>
+          <div>
+            <div class="text-slate-500 font-mono mb-1">Location</div>
+            <div class="font-bold">Kathmandu, Nepal</div>
+          </div>
+          <div>
+            <div class="text-slate-500 font-mono mb-1">Institutional Base</div>
+            <div class="font-bold">Kathmandu Model Secondary School (KMSS)</div>
+          </div>
+        </div>
+
+        <!-- Larger QR Code Container & Updated Text -->
+        <div class="flex flex-col items-center justify-center p-4 border border-slate-200 dark:border-slate-800 rounded-lg bg-slate-50 dark:bg-[#0d1117] space-y-2">
+          <div class="bg-white p-3 rounded-md shadow-sm">
+            <!-- Increased QR code image dimensions -->
+            <img src="vcard-qr.png" alt="vCard QR Code" width="140" height="140" class="block">
+          </div>
+          <span class="text-[11px] font-mono text-slate-500 dark:text-slate-400">Scan to connect</span>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer (Item 1: Removed "Built for simplicity and utility") -->
+  <footer class="border-t border-[#d0d7de] dark:border-[#30363d] py-8 text-center text-xs text-slate-500">
+    <p>&copy; 2026 Aaditya Paudel.</p>
+  </footer>
+
+</body>
+</html>
