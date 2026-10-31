@@ -46,65 +46,84 @@
           <a href="writing.html" class="hover:text-black dark:hover:text-white transition-colors">Writing</a>
           <a href="contact.html" class="hover:text-black dark:hover:text-white transition-colors">Contact</a>
         </nav>
+
+        <!-- Theme Toggle Button -->
+        <button onclick="document.documentElement.classList.toggle('dark')" aria-label="Toggle theme" class="p-2 rounded-lg border border-[#d0d7de] dark:border-[#30363d] bg-white dark:bg-[#161b22] text-slate-700 dark:text-slate-300 hover:border-slate-400 dark:hover:border-slate-500 transition-colors">
+          <!-- Sun icon for dark mode -->
+          <svg class="w-4 h-4 hidden dark:block" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+          <!-- Moon icon for light mode -->
+          <svg class="w-4 h-4 block dark:hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path></svg>
+        </button>
       </div>
     </div>
   </header>
 
   <!-- Main Content -->
-  <main class="max-w-3xl mx-auto px-6 py-12 space-y-12">
+  <main class="max-w-3xl mx-auto px-6 py-12 space-y-10">
     
-    <!-- Hero / Intro -->
-    <section class="space-y-4">
+    <!-- Hero / Introduction -->
+    <section class="space-y-3">
       <h1 class="text-3xl font-bold tracking-tight">About Me</h1>
       <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
-        I am a Grade 12 Management student at Kathmandu Model Secondary School (KMSS) in Bagbazar, Kathmandu, serving as Class Representative (CR). My work centers around digital governance, IT infrastructure analysis, systems resilience, and first-principles technical education.
+        Passionate about information technology, cybersecurity research, and systems analysis. My work focuses on analyzing vulnerability mechanics, evaluating infrastructure resilience, and simplifying complex IT concepts through clear technical writing.
       </p>
     </section>
 
-    <!-- Core Focus & Background -->
-    <section class="space-y-4">
-      <h2 class="text-xl font-bold tracking-tight">Academic & Leadership Focus</h2>
-      <div class="p-6 rounded-xl border border-[#d0d7de] dark:border-[#30363d] bg-white dark:bg-[#161b22] space-y-3">
-        <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
-          Combining coursework in Accountancy, Economics, Computer Science, and Research with practical tech tools. As Class Representative, I actively bridge communication between students, faculty, and administration while coordinating peer support initiatives.
-        </p>
-        <ul class="text-xs text-slate-600 dark:text-slate-400 space-y-1 list-disc list-inside font-mono">
-          <li>Class Representative (CR) — KMSS (+2 Management)</li>
-          <li>Peer Mentor — Economics, Accountancy & C Programming</li>
-          <li>Primary Research — IT Usage in Daily Life among 900+ +2 Students</li>
-        </ul>
-      </div>
-    </section>
+    <hr class="border-[#d0d7de] dark:border-[#30363d]">
 
-    <!-- Technical Toolkit & Workflow -->
-    <section class="space-y-4">
-      <h2 class="text-xl font-bold tracking-tight">Technical Toolkit</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
+    <!-- Technical Focus Areas (Multiple Cards) -->
+    <section class="space-y-6">
+      <div class="space-y-1">
+        <h2 class="text-xl font-bold tracking-tight">Core Technical Pillars</h2>
+        <p class="text-slate-600 dark:text-slate-400 text-xs">Primary domains of interest, technical exploration, and analytical focus.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
         
-        <div class="p-5 rounded-xl border border-[#d0d7de] dark:border-[#30363d] bg-white dark:bg-[#161b22]">
-          <h3 class="font-bold text-sm mb-2 text-blue-500">Systems & Infrastructure</h3>
-          <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
-            Windows Environment Customization, Group Policy, Registry Edits, Remote Access Infrastructure (Chrome Remote Desktop, RustDesk), and custom network mappings.
+        <!-- Box 1: Cybersecurity & Threat Analysis -->
+        <div class="p-5 rounded-xl border border-[#d0d7de] dark:border-[#30363d] bg-white dark:bg-[#161b22] space-y-3">
+          <div class="flex items-center space-x-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 inline-block"></span>
+            <h3 class="text-sm font-bold">Cybersecurity & Threat Analysis</h3>
+          </div>
+          <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+            Investigating vulnerability lifecycles, patch mechanics, and remote code execution (RCE) vectors. Interested in system hardening, disclosure ethics, and proactive risk mitigation across enterprise software.
           </p>
         </div>
 
-        <div class="p-5 rounded-xl border border-[#d0d7de] dark:border-[#30363d] bg-white dark:bg-[#161b22]">
-          <h3 class="font-bold text-sm mb-2 text-emerald-500">Development & Research</h3>
-          <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
-            C Programming, VS Code, Code::Blocks IDE, KoboToolbox survey analytics, HTML/Tailwind CSS, and AI Prompt Engineering (Universal Prompt Architecture).
+        <!-- Box 2: IT Infrastructure & System Optimization -->
+        <div class="p-5 rounded-xl border border-[#d0d7de] dark:border-[#30363d] bg-white dark:bg-[#161b22] space-y-3">
+          <div class="flex items-center space-x-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-blue-500 inline-block"></span>
+            <h3 class="text-sm font-bold">IT Infrastructure & Systems</h3>
+          </div>
+          <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+            Hands-on configuration, hardware optimization, operating system tuning, and local network mapping. Experienced in configuring remote management tooling, Group Policy structures, and system maintenance.
           </p>
         </div>
 
-      </div>
-    </section>
+        <!-- Box 3: Software & Systems Exploration -->
+        <div class="p-5 rounded-xl border border-[#d0d7de] dark:border-[#30363d] bg-white dark:bg-[#161b22] space-y-3">
+          <div class="flex items-center space-x-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-purple-500 inline-block"></span>
+            <h3 class="text-sm font-bold">Programming & Technical Research</h3>
+          </div>
+          <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+            Exploring foundational software development concepts, memory safety, and algorithmic logic. Dedicated to producing comprehensive technical study guides, code documentation, and structured learning resources.
+          </p>
+        </div>
 
-    <!-- Interests & Beyond Tech -->
-    <section class="space-y-4">
-      <h2 class="text-xl font-bold tracking-tight">Interests & Horology</h2>
-      <div class="p-6 rounded-xl border border-[#d0d7de] dark:border-[#30363d] bg-white dark:bg-[#161b22] space-y-2 text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
-        <p>
-          Beyond academics and systems analysis, I have a deep appreciation for classic horology and vintage wristwatches (including classic HMT and Casio timepieces), local road cycling, and open-world simulation gaming.
-        </p>
+        <!-- Box 4: Digital Governance & Technical Writing -->
+        <div class="p-5 rounded-xl border border-[#d0d7de] dark:border-[#30363d] bg-white dark:bg-[#161b22] space-y-3">
+          <div class="flex items-center space-x-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-amber-500 inline-block"></span>
+            <h3 class="text-sm font-bold">Digital Governance & Communication</h3>
+          </div>
+          <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+            Bridging complex technical concepts with clear, accessible breakdowns. Focused on data collection methodology, digital policy analysis, and advocating for robust institutional IT infrastructure.
+          </p>
+        </div>
+
       </div>
     </section>
 
@@ -112,7 +131,7 @@
 
   <!-- Footer -->
   <footer class="border-t border-[#d0d7de] dark:border-[#30363d] py-8 text-center text-xs text-slate-500">
-    <p>&copy; 2026 Aaditya Paudel. Built with HTML & Tailwind CSS.</p>
+    <p>&copy; 2026 Aaditya Paudel.</p>
   </footer>
 
 </body>
