@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PHP Remote Code Execution (RCE) Analysis | Aaditya Paudel</title>
+  
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            mono: ['"JetBrains Mono"', 'monospace'],
+            sans: ['Inter', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    code, pre, .mono { font-family: 'JetBrains Mono', monospace; }
+  </style>
+</head>
+<body class="bg-[#fafafa] dark:bg-[#0d1117] text-[#1f2328] dark:text-[#e6edf3] antialiased transition-colors duration-200">
+
+  <!-- Header / Navigation -->
+  <header class="sticky top-0 z-50 backdrop-blur-md bg-[#fafafa]/90 dark:bg-[#0d1117]/90 border-b border-[#d0d7de] dark:border-[#30363d]">
+    <div class="max-w-3xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="index.html" class="text-sm font-semibold tracking-tight hover:opacity-80 transition-opacity">
+        Aaditya Paudel<span class="text-slate-500 dark:text-slate-400">.</span>
+      </a>
+
+      <div class="flex items-center space-x-6 text-sm">
+        <nav class="hidden sm:flex space-x-6 text-slate-700 dark:text-slate-400 font-medium text-xs">
+          <a href="index.html" class="hover:text-black dark:hover:text-white transition-colors">Home</a>
+          <a href="about.html" class="hover:text-black dark:hover:text-white transition-colors">About</a>
+          <a href="writing.html" class="text-black dark:text-white font-semibold transition-colors">Writing</a>
+          <a href="contact.html" class="hover:text-black dark:hover:text-white transition-colors">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="max-w-3xl mx-auto px-6 py-12 space-y-8">
+    
+    <!-- Back Button & Meta Header -->
+    <div>
+      <a href="writing.html" class="text-xs font-mono text-blue-500 hover:underline flex items-center space-x-1 mb-4">
+        <span>&larr; Back to Writing</span>
+      </a>
+      <div class="flex items-center space-x-3 text-xs font-mono text-slate-500 mb-2">
+        <span class="px-2 py-0.5 rounded-md bg-emerald-500/10 text-emerald-400 font-semibold">published</span>
+        <span>&bull;</span>
+        <span>Oct 2026</span>
+        <span>&bull;</span>
+        <span>Cybersecurity Analysis</span>
+      </div>
+      <h1 class="text-3xl font-bold tracking-tight">PHP Remote Code Execution (RCE) Analysis</h1>
+    </div>
+
+    <!-- Article Body -->
+    <article class="prose dark:prose-invert max-w-none text-sm text-slate-600 dark:text-slate-300 space-y-5 leading-relaxed">
+      
+      <p>
+        PHP, known as <span class="font-mono text-slate-900 dark:text-slate-100 font-medium">"PHP: Hypertext Preprocessor,"</span> is a server-side scripting language that is used to handle the backend of nearly 69.2% of all websites with a known server-side programming language, according to web technology tracker W3Techs. This scripting language, invented in 1994 by Danish-Canadian programmer Rasmus Lerdorf, powers some of the most popular sites that we use on a daily basis, such as <code class="text-blue-500 bg-slate-100 dark:bg-slate-800 px-1 py-0.5 rounded">wikipedia.org</code>, <code class="text-blue-500 bg-slate-100 dark:bg-slate-800 px-1 py-0.5 rounded">microsoft.com</code>, and <code class="text-blue-500 bg-slate-100 dark:bg-slate-800 px-1 py-0.5 rounded">theguardian.com</code>.
+      </p>
+
+      <div class="p-4 rounded-lg border border-amber-500/30 bg-amber-500/5 text-amber-600 dark:text-amber-400 text-xs leading-relaxed space-y-1">
+        <div class="font-bold font-mono uppercase tracking-wider text-[11px]">Vulnerability Highlight: 'PHP2Shell'</div>
+        <p>CVE-2026-109618 & CVE-2026-109619 — Discovered during OpenAI's 'Patch the Planet' initiative.</p>
+      </div>
+
+      <p>
+        In early August 2026, more than three decades later, Ryan Austin, a cybersecurity researcher at California-based security firm Calif, discovered serious vulnerabilities (<strong>CVE-2026-109618</strong> and <strong>CVE-2026-109619</strong> that are altogether better known as <strong>'PHP2Shell'</strong>), and some exploitable paths in the PHP source code while he was participating in OpenAI's 'Patch the Planet' initiative program. Ryan went on to report those bugs to the PHP Security Team, which maintains the language.
+      </p>
+
+      <p>
+        Shortly after the findings, Wiz Research independently discovered the same vulnerability class and reported additional attack paths. Cybersecurity agencies, including the U.S. Cybersecurity and Infrastructure Security Agency (CISA) and CERT-EU, issued urgent advisories telling organizations to patch immediately. Some government and public-service portals were temporarily taken offline until fixes could be applied.
+      </p>
+
+      <p class="pt-2">
+        This incident is a reminder of how widely used technologies can contain flaws that can affect millions of websites and why timely security scans, debugging and patches are essential for keeping technology running smoothly.
+      </p>
+
+    </article>
+
+    <!-- Support Callout Box -->
+    <div class="p-6 rounded-xl border border-[#d0d7de] dark:border-[#30363d] bg-white dark:bg-[#161b22] text-center space-y-2 mt-8">
+      <p class="text-xs text-slate-600 dark:text-slate-400">
+        Like this written piece? You can support it further by leaving an impression in <a href="https://linkedin.com" target="_blank" class="text-blue-500 font-semibold hover:underline">LinkedIn</a>.
+      </p>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-[#d0d7de] dark:border-[#30363d] py-8 text-center text-xs text-slate-500">
+    <p>&copy; 2026 Aaditya Paudel. Built with HTML & Tailwind CSS.</p>
+  </footer>
+
+</body>
+</html>
