@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Aaditya Paudel</title>
+  
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            mono: ['"JetBrains Mono"', 'monospace'],
+            sans: ['Inter', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    code, pre, .mono { font-family: 'JetBrains Mono', monospace; }
+  </style>
+</head>
+<body class="bg-[#fafafa] dark:bg-[#0d1117] text-[#1f2328] dark:text-[#e6edf3] antialiased transition-colors duration-200">
+
+  <!-- Header / Navigation -->
+  <header class="sticky top-0 z-50 backdrop-blur-md bg-[#fafafa]/90 dark:bg-[#0d1117]/90 border-b border-[#d0d7de] dark:border-[#30363d]">
+    <div class="max-w-3xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="index.html" class="text-sm font-semibold tracking-tight hover:opacity-80 transition-opacity">
+        Aaditya Paudel<span class="text-slate-500 dark:text-slate-400">.</span>
+      </a>
+
+      <div class="flex items-center space-x-6 text-sm">
+        <nav class="hidden sm:flex space-x-6 text-slate-700 dark:text-slate-400 font-medium text-xs">
+          <a href="index.html" class="hover:text-black dark:hover:text-white transition-colors">Home</a>
+          <a href="about.html" class="hover:text-black dark:hover:text-white transition-colors">About</a>
+          <a href="writing.html" class="hover:text-black dark:hover:text-white transition-colors">Writing</a>
+          <a href="contact.html" class="text-black dark:text-white font-semibold transition-colors">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="max-w-3xl mx-auto px-6 py-12 space-y-10">
+    
+    <!-- Title Section -->
+    <section class="space-y-3">
+      <h1 class="text-3xl font-bold tracking-tight">Get in Touch</h1>
+      <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+        Whether you want to discuss IT infrastructure, technical writing, academic research, or collaboration—feel free to reach out directly.
+      </p>
+    </section>
+
+    <!-- Direct Contact Cards -->
+    <section class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
+      
+      <!-- Primary Email -->
+      <a href="mailto:aadipaudel@outlook.com" class="p-6 rounded-xl border border-[#d0d7de] dark:border-[#30363d] bg-white dark:bg-[#161b22] hover:border-blue-500 transition-colors block group">
+        <div class="text-slate-500 dark:text-slate-400 font-mono mb-2">Direct Email</div>
+        <div class="text-sm font-bold group-hover:text-blue-500 transition-colors">aadipaudel@outlook.com</div>
+        <p class="text-slate-500 mt-2 text-[11px]">Best way to contact me for formal inquiries.</p>
+      </a>
+
+      <!-- Location / Status -->
+      <div class="p-6 rounded-xl border border-[#d0d7de] dark:border-[#30363d] bg-white dark:bg-[#161b22]">
+        <div class="text-slate-500 dark:text-slate-400 font-mono mb-2">Location & Base</div>
+        <div class="text-sm font-bold">Kathmandu, Nepal</div>
+        <p class="text-slate-500 mt-2 text-[11px]">Timezone: NPT (UTC+5:45)</p>
+      </div>
+
+    </section>
+
+    <!-- Social & Professional Links -->
+    <section class="space-y-4">
+      <h2 class="text-lg font-bold tracking-tight">Profiles & Code</h2>
+      <div class="p-6 rounded-xl border border-[#d0d7de] dark:border-[#30363d] bg-white dark:bg-[#161b22] space-y-4 text-xs">
+        
+        <div class="flex items-center justify-between pb-3 border-b border-slate-200 dark:border-slate-800">
+          <div>
+            <span class="font-bold">GitHub</span>
+            <span class="text-slate-500 block text-[11px]">Repository hosting & personal projects</span>
+          </div>
+          <a href="https://github.com/apaudel-np" target="_blank" class="text-blue-500 hover:underline font-mono">github.com/apaudel-np &rarr;</a>
+        </div>
+
+        <div class="flex items-center justify-between">
+          <div>
+            <span class="font-bold">LinkedIn</span>
+            <span class="text-slate-500 block text-[11px]">Professional updates & technical articles</span>
+          </div>
+          <a href="https://linkedin.com" target="_blank" class="text-blue-500 hover:underline font-mono">LinkedIn Profile &rarr;</a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-[#d0d7de] dark:border-[#30363d] py-8 text-center text-xs text-slate-500">
+    <p>&copy; 2026 Aaditya Paudel. Built with HTML & Tailwind CSS.</p>
+  </footer>
+
+</body>
+</html>

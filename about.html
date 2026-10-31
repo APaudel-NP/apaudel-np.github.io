@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Aaditya Paudel</title>
+  
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            mono: ['"JetBrains Mono"', 'monospace'],
+            sans: ['Inter', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    code, pre, .mono { font-family: 'JetBrains Mono', monospace; }
+  </style>
+</head>
+<body class="bg-[#fafafa] dark:bg-[#0d1117] text-[#1f2328] dark:text-[#e6edf3] antialiased transition-colors duration-200">
+
+  <!-- Header / Navigation -->
+  <header class="sticky top-0 z-50 backdrop-blur-md bg-[#fafafa]/90 dark:bg-[#0d1117]/90 border-b border-[#d0d7de] dark:border-[#30363d]">
+    <div class="max-w-3xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="index.html" class="text-sm font-semibold tracking-tight hover:opacity-80 transition-opacity">
+        Aaditya Paudel<span class="text-slate-500 dark:text-slate-400">.</span>
+      </a>
+
+      <div class="flex items-center space-x-6 text-sm">
+        <nav class="hidden sm:flex space-x-6 text-slate-700 dark:text-slate-400 font-medium text-xs">
+          <a href="index.html" class="hover:text-black dark:hover:text-white transition-colors">Home</a>
+          <a href="about.html" class="text-black dark:text-white font-semibold transition-colors">About</a>
+          <a href="writing.html" class="hover:text-black dark:hover:text-white transition-colors">Writing</a>
+          <a href="contact.html" class="hover:text-black dark:hover:text-white transition-colors">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="max-w-3xl mx-auto px-6 py-12 space-y-12">
+    
+    <!-- Hero / Intro -->
+    <section class="space-y-4">
+      <h1 class="text-3xl font-bold tracking-tight">About Me</h1>
+      <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+        I am a Grade 12 Management student at Kathmandu Model Secondary School (KMSS) in Bagbazar, Kathmandu, serving as Class Representative (CR). My work centers around digital governance, IT infrastructure analysis, systems resilience, and first-principles technical education.
+      </p>
+    </section>
+
+    <!-- Core Focus & Background -->
+    <section class="space-y-4">
+      <h2 class="text-xl font-bold tracking-tight">Academic & Leadership Focus</h2>
+      <div class="p-6 rounded-xl border border-[#d0d7de] dark:border-[#30363d] bg-white dark:bg-[#161b22] space-y-3">
+        <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+          Combining coursework in Accountancy, Economics, Computer Science, and Research with practical tech tools. As Class Representative, I actively bridge communication between students, faculty, and administration while coordinating peer support initiatives.
+        </p>
+        <ul class="text-xs text-slate-600 dark:text-slate-400 space-y-1 list-disc list-inside font-mono">
+          <li>Class Representative (CR) — KMSS (+2 Management)</li>
+          <li>Peer Mentor — Economics, Accountancy & C Programming</li>
+          <li>Primary Research — IT Usage in Daily Life among 900+ +2 Students</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Technical Toolkit & Workflow -->
+    <section class="space-y-4">
+      <h2 class="text-xl font-bold tracking-tight">Technical Toolkit</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
+        
+        <div class="p-5 rounded-xl border border-[#d0d7de] dark:border-[#30363d] bg-white dark:bg-[#161b22]">
+          <h3 class="font-bold text-sm mb-2 text-blue-500">Systems & Infrastructure</h3>
+          <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+            Windows Environment Customization, Group Policy, Registry Edits, Remote Access Infrastructure (Chrome Remote Desktop, RustDesk), and custom network mappings.
+          </p>
+        </div>
+
+        <div class="p-5 rounded-xl border border-[#d0d7de] dark:border-[#30363d] bg-white dark:bg-[#161b22]">
+          <h3 class="font-bold text-sm mb-2 text-emerald-500">Development & Research</h3>
+          <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+            C Programming, VS Code, Code::Blocks IDE, KoboToolbox survey analytics, HTML/Tailwind CSS, and AI Prompt Engineering (Universal Prompt Architecture).
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Interests & Beyond Tech -->
+    <section class="space-y-4">
+      <h2 class="text-xl font-bold tracking-tight">Interests & Horology</h2>
+      <div class="p-6 rounded-xl border border-[#d0d7de] dark:border-[#30363d] bg-white dark:bg-[#161b22] space-y-2 text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+        <p>
+          Beyond academics and systems analysis, I have a deep appreciation for classic horology and vintage wristwatches (including classic HMT and Casio timepieces), local road cycling, and open-world simulation gaming.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-[#d0d7de] dark:border-[#30363d] py-8 text-center text-xs text-slate-500">
+    <p>&copy; 2026 Aaditya Paudel. Built with HTML & Tailwind CSS.</p>
+  </footer>
+
+</body>
+</html>
