@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From Discovery to Update: What Happens After a Software Vulnerability Is Found? | Aaditya Paudel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#0b0f19',
+                        cardBg: '#111827',
+                        accentAmber: '#f59e0b',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-900 dark:bg-darkBg dark:text-gray-100 font-sans antialiased selection:bg-amber-500 selection:text-black min-h-screen flex flex-col transition-colors duration-200">
+
+    <!-- Header Navigation -->
+    <header class="w-full border-b border-gray-200 dark:border-gray-800 bg-white/80 dark:bg-darkBg/80 backdrop-blur sticky top-0 z-50 transition-colors duration-200">
+        <div class="max-w-4xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="https://apaudel-np.github.io/" class="font-bold text-lg tracking-tight text-gray-900 dark:text-white hover:text-amber-500 dark:hover:text-amber-400 transition">Aaditya Paudel.</a>
+            <nav class="flex items-center space-x-6 text-sm text-gray-600 dark:text-gray-300">
+                <a href="https://apaudel-np.github.io/" class="hover:text-gray-900 dark:hover:text-white transition">Home</a>
+                <a href="about.html" class="hover:text-gray-900 dark:hover:text-white transition">About</a>
+                <a href="writing.html" class="text-sky-600 dark:text-sky-400 font-medium">Writing</a>
+                <a href="contact.html" class="hover:text-gray-900 dark:hover:text-white transition">Contact</a>
+                <button id="theme-toggle" aria-label="Toggle Theme" class="p-2 rounded-md border border-gray-300 dark:border-gray-800 bg-gray-100 dark:bg-[#111827] hover:border-gray-400 dark:hover:border-gray-700 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition">
+                    <!-- Sun Icon (shown in dark mode) -->
+                    <svg id="theme-toggle-light-icon" class="w-4 h-4 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.8">
+                        <circle cx="12" cy="12" r="4"></circle>
+                        <path stroke-linecap="round" d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32l1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41m11.32-11.32l1.41-1.41"></path>
+                    </svg>
+                    <!-- Moon Icon (shown in light mode) -->
+                    <svg id="theme-toggle-dark-icon" class="w-4 h-4 block dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.8">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="max-w-3xl mx-auto px-6 py-12 flex-grow w-full">
+        
+        <!-- Back Link -->
+        <a href="writing.html" class="inline-flex items-center text-sm font-mono text-sky-600 dark:text-sky-400 hover:text-sky-500 dark:hover:text-sky-300 mb-6 transition">
+            ← Back to Writing
+        </a>
+
+        <!-- Metadata (Monospace matching php-rce-analysis.html) -->
+        <div class="flex items-center space-x-3 mb-4 text-xs font-mono tracking-wide">
+            <span class="bg-emerald-100 text-emerald-700 border border-emerald-300 dark:bg-emerald-950/80 dark:text-emerald-400 dark:border-emerald-800/80 px-2.5 py-0.5 rounded font-medium">published</span>
+            <span class="text-gray-500 dark:text-gray-400">•</span>
+            <span class="text-gray-600 dark:text-gray-400">12 Nov 2026</span>
+            <span class="text-gray-500 dark:text-gray-400">•</span>
+            <span class="text-gray-600 dark:text-gray-400">Cybersecurity Analysis</span>
+        </div>
+
+        <!-- Title -->
+        <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white mb-6 leading-tight">
+            From Discovery to Update: What Happens After a Software Vulnerability Is Found?
+        </h1>
+
+        <!-- Article Body -->
+        <div class="space-y-6 text-gray-700 dark:text-gray-300 leading-relaxed text-base">
+            <p>
+                A researcher discovers a serious software vulnerability. What happens next? Who fixes it, and how does that fix reach the people using the software?
+            </p>
+            <p>
+                In my <a href="https://apaudel-np.github.io/php-rce-analysis.html" class="text-sky-600 dark:text-sky-400 hover:underline">previous post</a>, I discussed the PHP vulnerabilities collectively known as <strong class="text-gray-900 dark:text-white">“PHP2Shell”</strong>. That story led me to another question: what happens between discovering a security flaw and getting a fix into the hands of the people affected? In this post, I’ll explore the main stages of that process, from discovering and reporting a vulnerability to preparing a patch and installing the update.
+            </p>
+
+            <!-- Highlight Box matching previous format -->
+            <div class="my-6 p-4 rounded-lg bg-amber-50/80 dark:bg-[#1c1917]/60 border border-amber-400/50 dark:border-amber-500/40 text-amber-800 dark:text-amber-400 text-sm font-mono">
+                <div class="font-bold tracking-wide uppercase">CASE STUDY WORKFLOW: 'PHP2SHELL'</div>
+                <div class="text-amber-700 dark:text-amber-300/90 mt-1">Tracing CVE-2026-109618 &amp; CVE-2026-109619 from initial discovery to coordinated patch release.</div>
+            </div>
+
+            <!-- Section 1 -->
+            <div class="space-y-4 pt-2">
+                <h2 class="text-xl font-bold text-gray-900 dark:text-white">1. Discovering the Vulnerability</h2>
+                <p>
+                    In any sort of problem solving, problem identification remains the first and most crucial step. For any problem to be patched for the long term, narrowing down the root cause of the vulnerability is key. It is also important to identify false positives, which may occur when someone notices something that looks like a security vulnerability but isn’t one.
+                </p>
+                <p class="pl-4 border-l-2 border-gray-300 dark:border-gray-700 text-gray-600 dark:text-gray-400">
+                    In the PHP2Shell case, <a href="https://calif.io/php2shell/" target="_blank" rel="noopener noreferrer" class="text-sky-600 dark:text-sky-400 hover:underline">Calif’s research timeline</a> dates the beginning of its discovery work to August 1, 2026. The researchers investigated how memory-limit failures could interrupt PHP’s normal processing and leave internal data in an unsafe state, eventually identifying multiple paths to remote code execution.
+                </p>
+            </div>
+
+            <!-- Section 2 -->
+            <div class="space-y-4 pt-2">
+                <h2 class="text-xl font-bold text-gray-900 dark:text-white">2. Reporting the Vulnerability</h2>
+                <p>
+                    Once a potential vulnerability is identified, the next step is to report the vulnerability to the software developers or security team using proper reporting channels (such as its security email address or vulnerability reporting form). The report should include core details of the vulnerability such as the description of the issue, where the issue is located, its possible impact if misused, steps to reproduce the issue (exact description of the sequence of actions that led to the issue, in detail and screenshots) where possible, and optionally, the reporter may also include a suggested process for preparing a fix for the problem if they have the technical knowledge to provide them. This is the phase where sensitive information is shared on a need-to-know basis to avoid unwanted public disclosure that may lead to the misuse of the vulnerability before the issue is fixed. The aim is not to hide the issue permanently, but to coordinate public disclosure so that the responsible team has a reasonable opportunity to investigate and address it, while reducing the risk of exploitation.
+                </p>
+                <p class="pl-4 border-l-2 border-gray-300 dark:border-gray-700 text-gray-600 dark:text-gray-400">
+                    According to Calif's timeline, Ryan Austin reported the first bug to PHP's security team on August 11, 2026, beginning the coordinated disclosure process. Calif shared a remote code execution proof of concept with PHP on August 14, and PHP confirmed the next day that it worked as expected. A second bug was reported on August 21, 2026.
+                </p>
+            </div>
+
+            <!-- Section 3 -->
+            <div class="space-y-4 pt-2">
+                <h2 class="text-xl font-bold text-gray-900 dark:text-white">3. Preparation and Test of the Fix</h2>
+                <p>
+                    After recognizing the core issue and its possible impacts, the software developers or security team begin working on fixing the root cause of the vulnerability. The fix may take the form of a security patch or a software update. Before releasing the fix, however, the development and testing teams, sometimes with help from the initial reporter, test whether it addresses the vulnerability. They also check whether it unexpectedly affects the software’s other functions. However, some vulnerabilities are more complicated than others, and in such scenarios, if the complete fix isn't immediately available, the team may recommend temporary workarounds to reduce the risk, though such measures shouldn't be taken as a long-term resolution of the vulnerability. Once the fix has been tested, it can be released with guidance explaining which versions are affected and what users need to update.
+                </p>
+                <p class="pl-4 border-l-2 border-gray-300 dark:border-gray-700 text-gray-600 dark:text-gray-400">
+                    On October 21, 2026, PHP released versions 8.5.12, 8.4.27, 8.3.36 and 8.2.35 to address the vulnerabilities. <a href="https://www.php.net/archive/2026.php#2026-10-21-1" target="_blank" rel="noopener noreferrer" class="text-sky-600 dark:text-sky-400 hover:underline">An advisory</a> also described temporary measures for organizations that could not update immediately. However, PHP explicitly warned that these measures were only temporary workarounds and did not make an unpatched installation safe.
+                </p>
+            </div>
+
+            <!-- Section 4 -->
+            <div class="space-y-4 pt-2">
+                <h2 class="text-xl font-bold text-gray-900 dark:text-white">4. Installation and Verification of the Update</h2>
+                <p>
+                    When a patch is released, it doesn't mean that every affected system is automatically protected against said vulnerability. Some updates are installed automatically, some are made mandatory by the software provider, and some may require the users, website owners, or the IT administrators to take certain action (such as downloading the patch from a trusted source, or manually clicking 'Update' inside the software). Even an automatic or mandatory update may require additional steps such as restarting the software or system, or granting a required permission. The people responsible for affected systems need to follow the provider’s instructions, apply the appropriate update or patch, and verify that it was successfully installed and has taken effect. They should also perform basic checks to ensure that the software’s expected functions still work. The key principle is that a patch being available does not, by itself, mean that every affected system has been patched.
+                </p>
+                <p class="pl-4 border-l-2 border-gray-300 dark:border-gray-700 text-gray-600 dark:text-gray-400">
+                    PHP provided the patches in advance to Linux distributions and long-term support vendors, and urged users to update immediately. Website operators therefore needed to obtain the appropriate update for their installation, either from PHP or through their vendor. Some vendors also provided backported fixes to older versions of PHP.
+                </p>
+            </div>
+
+            <!-- Author Context Note -->
+            <p class="pt-4">
+                As a +2 Management student in Kathmandu studying Computer Science, learning about the discovery of PHP2Shell initially made me curious on how cybersecurity vulnerabilities are discovered, how they impact the affected systems, and how they are resolved step-by-step.
+            </p>
+
+            <!-- References & Related Links -->
+            <div class="pt-4 border-t border-gray-200 dark:border-gray-800 text-sm text-gray-600 dark:text-gray-400 space-y-2">
+                <p class="font-semibold text-gray-900 dark:text-gray-200">References &amp; Further Reading:</p>
+                <ul class="list-disc list-inside space-y-1">
+                    <li><a href="https://apaudel-np.github.io/php-rce-analysis.html" class="text-sky-600 dark:text-sky-400 hover:underline">My Previous Post</a></li>
+                    <li>Also you can check out my <a href="https://apaudel-np.github.io/" target="_blank" rel="noopener noreferrer" class="text-sky-600 dark:text-sky-400 hover:underline">personal-professional portfolio website</a></li>
+                    <li><a href="https://calif.io/php2shell/" target="_blank" rel="noopener noreferrer" class="text-sky-600 dark:text-sky-400 hover:underline">Source for PHP2Shell Timelines</a></li>
+                    <li><a href="https://www.php.net/archive/2026.php#2026-10-21-1" target="_blank" rel="noopener noreferrer" class="text-sky-600 dark:text-sky-400 hover:underline">PHP's Official Security Advisory</a></li>
+                </ul>
+            </div>
+
+            <!-- LinkedIn Engagement Box matching previous format -->
+            <div class="mt-10 p-6 rounded-xl bg-gray-100 dark:bg-[#111827] border border-gray-200 dark:border-gray-800 text-center text-sm text-gray-700 dark:text-gray-300 transition-colors duration-200">
+                Like this written piece? You can support it further by leaving an impression in <a href="https://www.linkedin.com/pulse/from-discovery-update-what-happens-after-software-found-paudel-zszzc" target="_blank" rel="noopener noreferrer" class="text-sky-600 dark:text-sky-400 font-medium hover:underline">LinkedIn</a>.
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full border-t border-gray-200 dark:border-gray-800 py-8 mt-12 text-center text-xs text-gray-500">
+        © 2026 Aaditya Paudel.
+    </footer>
+
+    <!-- Working Dark/Light Mode Toggle Script -->
+    <script>
+        const htmlEl = document.documentElement;
+        const themeToggleBtn = document.getElementById('theme-toggle');
+
+        // Load saved preference (defaults to dark mode)
+        if (localStorage.getItem('theme') === 'light') {
+            htmlEl.classList.remove('dark');
+        } else {
+            htmlEl.classList.add('dark');
+        }
+
+        themeToggleBtn.addEventListener('click', () => {
+            htmlEl.classList.toggle('dark');
+            if (htmlEl.classList.contains('dark')) {
+                localStorage.setItem('theme', 'dark');
+            } else {
+                localStorage.setItem('theme', 'light');
+            }
+        });
+    </script>
+
+</body>
+</html>
